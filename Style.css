@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333333;
+    background-color: #f5f5f5;
+    font-size: 11pt;
+    line-height: 1.5;
+    padding: 20px 0;
+}
+
+/* Tata Letak Dua Kolom */
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    min-height: 297mm; /* Mendekati standar tinggi A4 */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Kolom Kiri: Sidebar */
+.sidebar {
+    width: 32%;
+    background-color: #ebdcd0; /* Warna krem sesuai dokumen asli */
+    padding: 35px 20px;
+}
+
+/* Kolom Kanan: Konten Utama */
+.main-content {
+    width: 68%;
+    background-color: #ffffff;
+    padding: 40px 35px;
+}
+
+/* Komponen Komponen di Sidebar */
+.photo-placeholder {
+    width: 100%;
+    height: 240px;
+    background-color: #d1c2b7;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border: 4px solid #ffffff;
+    text-align: center;
+    line-height: 240px;
+    color: #555;
+    font-size: 10pt;
+    font-style: italic;
+}
+
+.sidebar-title {
+    font-size: 13pt;
+    color: #5c3d24;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #bcaba0;
+    padding-bottom: 5px;
+}
+
+.kontak-item, .education-item, .edu-item {
+    margin-bottom: 15px;
+    font-size: 10pt;
+}
+
+.contact-label {
+    font-weight: bold;
+    color: #5c3d24;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.edu-year {
+    font-weight: bold;
+    color: #5c3d24;
+}
+
+.edu-institution, .edu-school {
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.edu-detail {
+    font-size: 9.5pt;
+    color: #555555;
+    margin-top: 3px;
+    line-height: 1.4;
+}
+
+/* Tabel Kemampuan */
+.skills-table {
+    width: 100%;
+    font-size: 10pt;
+    border-collapse: collapse;
+}
+
+.skills-table td {
+    padding: 5px 0;
+    width: 50%;
+    vertical-align: top;
+}
+
+/* Komponen di Konten Utama */
+h1 {
+    font-size: 24pt;
+    color: #5c3d24;
+    margin-bottom: 5px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    font-size: 14pt;
+    color: #8c7662;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-bottom: 2px solid #8c7662;
+    padding-bottom: 8px;
+}
+
+.section p {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 10.5pt;
+    color: #444444;
+}
+
+.section-title {
+    font-size: 14pt;
+    color: #5c3d24;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #5c3d24;
+    padding-bottom: 5px;
+}
+
+/* Komponen Riwayat Kerja & Pelatihan */
+.job-items, .job-item {
+    margin-bottom: 20px;
+}
+
+.job-date {
+    font-style: italic;
+    color: #666666;
+    font-size: 10pt;
+    margin-bottom: 3px;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #222222;
+    font-size: 11pt;
+}
+
+.job-company {
+    color: #5c3d24;
+    font-weight: bold;
+    font-size: 10.5pt;
+    margin-top: 1px;
+}
+
+.job-description, .job-desk {
+    font-size: 10pt;
+    margin-top: 4px;
+    color: #444444;
+}
+
+.job-bullets {
+    margin-top: 5px;
+    padding-left: 20px;
+    font-size: 10pt;
+    color: #444444;
+}
+
+.job-bullets li {
+    margin-bottom: 3px;
+}
+
+/* Sifat Responsif jika dibuka di HP */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+        padding: 25px;
+    }
+}
+.Profil.Foto{
+    width: 100px;
+    max-width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    border: 4px solid #ffffff;
+    display: block;
+    margin: 0 auto 25px auto;
+}
