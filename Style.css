@@ -184,17 +184,6 @@ h1 {
 .job-bullets li {
     margin-bottom: 3px;
 }
-
-/* Sifat Responsif jika dibuka di HP */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-    .sidebar, .main-content {
-        width: 100%;
-        padding: 25px;
-    }
-}
 .Profil.Foto{
     width: 100px;
     max-width: 200px;
@@ -206,3 +195,17 @@ h1 {
     display: block;
     margin: 0 auto 25px auto;
 }
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+        text-align: center;
+    }
+    .main-content{
+        width: 100%;
+    }
+    .skills-table{
+        display: inline-block;
+    }
